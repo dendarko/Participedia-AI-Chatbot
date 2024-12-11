@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participedia AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="chat-container">
+    <!-- Header Section -->
+    <header>
+      <img src="{{ url_for('static', filename='logo2.png') }}" alt="Participedia Logo" class="logo">
+        <img src="{{ url_for('static', filename='chatbotimage1.png') }}" alt="AI Chatbot Image" class="chatbotimage">
+      <h1>Ask a Question</h1>
+    </header>
+
+    <!-- Placeholder Section -->
+    <div id="placeholder-container">
+      <p>Hi, I can help with your Participedia-related inquiries about democratic innovations.</p>
+      <h4>Simply type your question or select a sample query below to get started.</h4>
+      <ul id="suggestions">
+        <li><button onclick="sendMessage('Tell me about participatory budgeting')">Tell me about participatory budgeting</button></li>
+        <li><button onclick="sendMessage('What organizations support participatory democracy?')">What organizations support participatory democracy?</button></li>
+        <li><button onclick="sendMessage('Explain participatory democracy')">Explain participatory democracy</button></li>
+      </ul>
+    </div>
+
+    <!-- Chat Box Section -->
+    <div id="chat-box" style="display: none;"></div>
+
+    <!-- Input Section -->
+    <div id="input-container">
+      <input id="user-input" type="text" placeholder="Type your question here...">
+      <button id="send-btn">Send</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Disclaimer: This chatbot is currently undergoing testing and refinement to improve response accuracy and user experience.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+
+

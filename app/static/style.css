@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#chat-container {
+  width: 450px;
+  height: 650px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+
+header .logo {
+  max-height: 50px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: black;
+}
+
+/* Placeholder Styling */
+#placeholder-container {
+  flex: 1;
+  padding: 15px;
+  text-align: left;
+}
+
+#placeholder-container p {
+  margin: 10px 0;
+}
+
+/* Suggestions List */
+#suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#suggestions li {
+  margin-bottom: 10px;
+}
+
+#suggestions button {
+  width: 100%;
+  background-color: #ffe6e6; /* Light red tint */
+  color: #cc0000; /* Red text color */
+  border: 2px solid #cc0000; /* Red border */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#suggestions button:hover {
+  background-color: #ffcccc; /* Slightly darker red tint on hover */
+  color: #990000; /* Darker red text on hover */
+  box-shadow: 0 4px 8px rgba(204, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Chat Box Section */
+#chat-box {
+  flex: 3;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Input Section */
+#input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+#user-input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#send-btn {
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+  background-color: #333333;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Resizing message icons */
+.message-icon {
+  width: 30px; /* Adjust the width */
+  height: 30px; /* Adjust the height */
+  margin-right: 10px; /* Space between the icon and message */
+  vertical-align: middle; /* Align with the message text */
+}
+
+/* Adjusting message containers */
+.user-message, .bot-message {
+  display: flex;
+  align-items: center;
+}
+
+/* Chat Messages */
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #ff6666; /* Softer tint of red */
+  color: white;
+  align-self: flex-end;
+  margin-bottom: 20px; /* Add spacing after the user message */
+}
+
+.bot-message {
+  background-color: #f9f9f9;
+  color: black;
+  align-self: flex-start;
+  margin-top: 20px; /* Add spacing before the bot response */
+}
+
+/* Adjust the icons for better alignment */
+.message-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.feedback-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.feedback-buttons span {
+  font-size: 14px;
+  color: #555;
+}
+
+.feedback-buttons button {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-buttons button:hover {
+  background-color: #e1e1e1;
+}
+
+/* Logo and Chatbot Image Container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between images */
+  margin-bottom: 10px; /* Add spacing below the images */
+}
+
+/* Participedia Logo */
+.logo {
+  max-height: 50px; /* Adjust size */
+  max-width: auto;
+}
+
+/* Chatbot Image */
+.chatbotimage {
+  max-height: 50px; /* Adjust to match the logo height */
+  max-width: auto;
+}
