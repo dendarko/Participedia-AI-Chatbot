@@ -223,7 +223,7 @@ Prerequisites
 Steps
 
     1. Clone the repository:
-    git clone https://github.com/your-username/participedia-ai-chatbot.git
+    git clone https://github.com/dendarko/participedia-ai-chatbot.git
     cd participedia-ai-chatbot
     
     2.Install dependencies:
